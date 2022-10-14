@@ -1,4 +1,9 @@
 
+/**
+ * @klotho::persist {
+ *  id = "persist-0"
+ * }
+ */
 const users = new Map<string, string>();
 
 

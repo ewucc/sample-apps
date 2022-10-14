@@ -1,3 +1,10 @@
+/**
+ * @klotho::execution_unit {
+ *  id = "main-unit"
+ * }
+ */
+
+
 import express = require('express')
 import { addUser, getUsers } from './users';
 
@@ -28,6 +35,12 @@ router.put('/users/:user', async (req, res) => {
 
 app.use(router)
 
+/**
+ * @klotho::expose {
+ *  target = "public"
+ *  id = "app"
+ * }
+ */
 app.listen(3000, async () => {
   console.log(`App listening at :3000`)
 })
